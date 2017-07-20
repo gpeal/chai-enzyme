@@ -1,5 +1,3 @@
-import {findDOMNode} from 'enzyme/build/react-compat'
-
 import TestWrapper from './TestWrapper'
 
 export default class ReactTestWrapper extends TestWrapper {
@@ -10,7 +8,7 @@ export default class ReactTestWrapper extends TestWrapper {
 
   get el () {
     if (!this.__el) {
-      this.__el = this.wrapper.single((n) => findDOMNode(n))
+      this.__el = this.wrapper.single((n) => this.wrapper.getDOMNode())
     }
 
     return this.__el
