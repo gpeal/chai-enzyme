@@ -87,6 +87,6 @@
   "dependencies": {
     "create-react-class": "^15.6.0",
     "html": "^1.0.0",
-    "react-element-to-jsx-string": "^11.0.0"
+    "react-element-to-jsx-string": "git+https://github.com/gpeal/react-element-to-jsx-string.git#64a6102"
   }
 }
