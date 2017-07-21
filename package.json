@@ -28,7 +28,7 @@
   "peerDependencies": {
     "chai": "^3.0.0 || ^4.0.0",
     "cheerio": "0.19.x || 0.20.x || 0.22.x || 1.0.0-rc.1",
-    "enzyme": "^3.0.0 || ^3.0.0-alpha.1",
+    "enzyme": "^3.0.0 || ^3.0.0-alpha",
     "react": "^16.0.0 || ^16.0.0-alpha",
     "react-dom": "^16.0.0 || ^16.0.0-alpha"
   },
@@ -62,8 +62,10 @@
     "jsdom": "^9.1.0",
     "mocha": "^3.0.0",
     "prop-types": "^15.5.7",
-    "react": "^16.0.0-alpha.12",
-    "react-dom": "^16.0.0-alpha.12",
+    "react": "^16.0.0-alpha.13",
+    "react-addons-test-utils": "^16.0.0-alpha.3",
+    "react-dom": "^16.0.0-alpha.13",
+    "react-test-renderer": "^16.0.0-alpha.13",
     "rimraf": "^2.5.0",
     "snazzy": "^5.0.0",
     "standard": "^8.1.0"
@@ -84,10 +86,7 @@
   },
   "dependencies": {
     "create-react-class": "^15.6.0",
-    "enzyme": "^3.0.0-alpha.1",
     "html": "^1.0.0",
-    "react": "^16.0.0-alpha.12",
-    "react-dom": "^16.0.0-alpha.12",
-    "react-element-to-jsx-string": "12.0.0"
+    "react-element-to-jsx-string": "^11.0.0"
   }
 }

@@ -8,16 +8,14 @@ export default class ReactTestWrapper extends TestWrapper {
 
   get el () {
     if (!this.__el) {
-      this.__el = this.wrapper.single((n) => this.wrapper.getDOMNode())
+      this.__el = this.wrapper.getDOMNode()
     }
 
     return this.__el
   }
 
   inspect () {
-    const name = this.wrapper.root.node.constructor.displayName ||
-      this.wrapper.root.node.constructor.name ||
-      '???'
+    const name = this.wrapper.root.name()
 
     if (this.wrapper.root === this.wrapper) {
       return `<${name} />`
